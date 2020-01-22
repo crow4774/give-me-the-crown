@@ -1,2 +1,3 @@
-UNC-BACS200
-Small business web desgin
+UNC-BACS200-008
+Web Design & Development for Small Business
+Spring 2020
