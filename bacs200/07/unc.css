@@ -1,11 +1,13 @@
 body {
     background-color:whitesmoke;
 }
+
 h1 {
     color: darkgoldenrod;
     border: 1px solid gray;
     background-color: black;
 }
+
 a {
     color: darkred;
 }
