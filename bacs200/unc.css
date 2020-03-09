@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+    background-color: whitesmoke
+}
+
+h1 {
+    margin: 15px;
+    padding: 25px;
+    color: ghostwhite;
+    background-color: darkblue;
+    border: 5px solid black;
+    text-align: center;
+    box-shadow: 4px 4px 5px silver;
+}
+
+h2 {
+    color: black;
+    background-color: ghostwhite;
+    border: 3px solid darkblue;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 5px silver;
+}
+
+header {
+    border: 
+}
