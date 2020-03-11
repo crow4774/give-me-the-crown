@@ -9,19 +9,31 @@ h1 {
     margin: 15px;
     padding: 25px;
     color: ghostwhite;
-    background-color: darkblue;
+    background-color: maroon;
     border: 5px solid black;
     text-align: center;
-    box-shadow: 4px 4px 5px silver;
+    box-shadow: 4px 4px 5px gray;
 }
 
 h2 {
     color: black;
     background-color: ghostwhite;
-    border: 3px solid darkblue;
+    border: 3px solid maroon;
     text-align: center;
     margin: 10px 20px;
     padding: 10px 20px;
-    box-shadow: 4px 4px 5px silver;
+    box-shadow: 4px 4px 5px gray;
 }
 
+body img {
+    margin: auto;
+    display: block;
+}
+
+li {
+    margin: 5px 1.5em;
+}
+
+p {
+    margin: 0.55em 3em;
+}
