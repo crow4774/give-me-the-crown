@@ -1,2 +1,2 @@
-# UNC BACS 200
-yup this is how it is lol
+# Final Project
+This project is going to be focused on providing information on criminal justice and how the system works as compared to popular culture. Popular culture is going to be related to crime books, crime movies, and of course my favorite, crime shows. There will be a main menu with navigation to different pages like popular culture, how the justiece system works, myths vs. facts, informational videos, and other information that may not fit into these categories. I would like to foucs on creating each page to be aesthetically pleasing with easy navigation to and from each page.
