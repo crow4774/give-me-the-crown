@@ -13,8 +13,8 @@ nav {
 
 #main-menu ul li {
     display: inline;
-    padding: 1em;
-    margin: 3px;
+    padding: .75em;
+    margin: 6px;
     width: 200px;
     background-color: black;
     color: white;
