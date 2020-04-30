@@ -24,21 +24,54 @@
     <link href="https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 20px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 20px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  margin: 20px;
+}
+
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
 </head>
@@ -69,85 +102,103 @@
             <div class="container">
                 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-lg">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                             <img src="images/criminal%20minds.jpg" class="card-img-top" width="550" height="285" alt="criminal minds">
-                                <div class="card-body">
-                                    <p class="card-text"><em><br>Criminal Minds</em><br> This is a well know show to those who live crime tv shows. It follows FBI profilers as they go against the worst of the worst and save people along the way.</p>
+                            </div>
+                                <div class="flip-card-back">
+                                    <p><em><br>Criminal Minds</em><br></p>
+                                        <p>This is a well know show to those who live crime tv shows. It follows FBI profilers as they go against the worst of the worst and save people along the way.</p>
+                                     <a href="https://www.cbs.com/shows/criminal_minds/about/">More Info</a>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                        <a href="https://www.cbs.com/shows/criminal_minds/about/">More Info</a>
-                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-lg">
+                <div class="row">
+                        <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
                                 <img src="images/psych.jpeg" class="card-img-top" width="550" height="285" alt="psych">
-                                <div class="card-body">
+                            </div>
+                                 <div class="flip-card-back">
                                     <p class="card-text"><br><em>Psych</em><br> Here we follow Sean Spencer and his best friend Gus as they help the Santa Barabra Police solve crimes as private...psychic...consultants.</p>
+                                     <a href="https://www.usanetwork.com/psych">More Info</a>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                        <a href="https://www.usanetwork.com/psych">More Info</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-lg">
-                                <img src="images/LO_SVU_S21-Logo-1920x1080.jpg" width="348" height="285" alt="l&oSVU2">
-                                <div class="card-body">
+                        <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/LO_SVU_S21-Logo-1920x1080.jpg" width="300" height="285" alt="l&oSVU2">
+                            </div>
+                                <div class="flip-card-back">
                                     <p class="card-text"><br><em>Law & Order: SVU</em><br> In New York there is a unit dedicated to help victims of sexual based crimes. Each episode follows a different situation with court appearances and the ending is what you least expect.</p>
+                                    <a href="https://www.nbc.com/law-and-order-special-victims-unit">More Info</a>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                        <a href="https://www.nbc.com/law-and-order-special-victims-unit">More Info</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 shadow-lg">
-                                <img src="images/the%20judge.jpg" width="348" height="285" alt="the judge">
-                                <div class="card-body">
+                        <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/the%20judge.jpg" width="300" height="285" alt="the judge">
+                            </div>
+                                <div class="flip-card-back">
                                     <p class="card-text"><br><em>The Judge</em><br> In We follow Robert Downey Jr. as an attorney who is defending his father in a court case. There are many twist and turns with relationships complicated the court case.</p>
+                                     <a href="https://www.nydailynews.com/entertainment/movies/judge-movie-review-article-1.1969031">More Info</a>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                        <a href="https://www.nydailynews.com/entertainment/movies/judge-movie-review-article-1.1969031">More Info</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                          <div class="col-md-4">
-                            <div class="card mb-4 shadow-lg">
-                                <img src="images/david%20baldacci.jpg" width="348" height="285" alt="memory man">
-                                <div class="card-body">
+                        <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/david%20baldacci.jpg" width="300" height="285" alt="memory man">
+                            </div>
+                                 <div class="flip-card-back">
                                     <p class="card-text"><br><em>Memory Man</em><br>Amos Decker suffers a tramatic brain injury that allows him to remember everything. We follow him through henious murders and a shady past acquaintance to find the truth.</p>
+                                     <a href="http://www.supersummary.com/memory-man/summary/">More Info</a>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                        <a href="http://www.supersummary.com/memory-man/summary/">More Info</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                         <div class="col-md-4">
-                            <div class="card mb-4 shadow-lg">
-                                <img src="images/girl%20with%20the%20dragon%20tattoo.jpg" width="348" height="285" alt="dragon tattoo">
-                                <div class="card-body">
+                           <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="images/girl%20with%20the%20dragon%20tattoo.jpg" width="300" height="285" alt="dragon tattoo">
+                            </div>
+                                <div class="flip-card-back">
                                     <p class="card-text"><br><em>Girl with the Dragon Tattoo</em><br>A riveting thriller of a computer hacker and a besmirched journalist as they look to solve decades old cold case. (Also made into a movie)</p>
+                                    <a href="https://www.cliffsnotes.com/literature/g/the-girl-with-the-dragon-tattoo/book-summary">More Info</a>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                        <a href="https://www.cliffsnotes.com/literature/g/the-girl-with-the-dragon-tattoo/book-summary">More Info</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
                    
     </main>
     
 </body>
+    
+</html>

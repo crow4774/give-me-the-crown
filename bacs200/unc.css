@@ -30,6 +30,11 @@ body img {
     display: block;
 }
 
+body iframe {
+    margin: auto;
+    display: block;
+}
+
 li {
     margin: 5px 1.5em;
 }
